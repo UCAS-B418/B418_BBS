@@ -1,8 +1,4 @@
-# super-bbs
-一个基于Flask的bbs论坛类项目
-前端有用户和管理员两套界面
-
-生产环境启动命令:
+# b418 bbs
 
 ```bash
 # redis
@@ -45,48 +41,3 @@ cd webAdmin
 yarn install
 yarn run serve
 ```
-
-# 最新更新请到 https://github.com/lgphone/super-bbs
-
-### 声明： 严重高仿(照抄)V2EX
-### 开发原因： 前后端分离，替换原来的FakeV2EX项目
-### 用户界面图片展示：
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs1.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs2.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs3.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs6.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs7.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs8.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs9.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs10.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs11.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs12.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs13.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/bbs14.png)
-
-
-## 管理界面图片展示：
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/admin1.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/admin2.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/admin3.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/admin4.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/admin5.png)
-
-![](https://gitee.com/YangEver/super-bbs/raw/master/docs/pic/admin6.png)

@@ -152,5 +152,5 @@ webAdmin/*.njsproj
 webAdmin/*.sln
 webAdmin/*.sw?
 
-
+.vscode/
 
