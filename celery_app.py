@@ -1,8 +1,8 @@
 from datetime import datetime
 from celery import Celery, Task
 from celery.schedules import crontab
-from super_bbs.app import create_app
-from super_bbs.model.users import CeleryTaskLogs
+from backend.app import create_app
+from backend.model.users import CeleryTaskLogs
 
 flask_app = create_app()
 flask_app.app_context().push()
@@ -10,7 +10,7 @@ flask_app.app_context().push()
 schedule_config = {
     'CELERYBEAT_SCHEDULE': {
         'clean_celery_log': {
-            'task': 'super_bbs.controller.account.tasks.clean_celery_log',
+            'task': 'backend.controller.account.tasks.clean_celery_log',
             'schedule': 10 if flask_app.config['DEBUG'] else crontab(minute=10, hour=3)
         }
     }
@@ -69,5 +69,5 @@ celery.conf.update(schedule_config)
 
 # 导入task注册
 celery.autodiscover_tasks([
-    'super_bbs.controller.account.task'
+    'backend.controller.account.task'
 ])

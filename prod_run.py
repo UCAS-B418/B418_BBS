@@ -4,7 +4,7 @@ from gevent import monkey
 
 monkey.patch_all()
 
-from super_bbs.app import create_app
+from backend.app import create_app
 
 app = create_app()
 

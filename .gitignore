@@ -108,49 +108,50 @@ venv.bak/
 migrations/
 
 # node
-web/.DS_Store
-web/node_modules
-web/dist
+frontend/.DS_Store
+frontend/node_modules
+frontend/dist
 
 # local env files
-web/.env.local
-web/.env.*.local
+frontend/.env.local
+frontend/.env.*.local
 
 # Log files
-web/npm-debug.log*
-web/yarn-debug.log*
-web/yarn-error.log*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
 
 # Editor directories and files
-web/.idea
-web/.vscode
-web/*.suo
-web/*.ntvs*
-web/*.njsproj
-web/*.sln
-web/*.sw?
+frontend/.idea
+frontend/.vscode
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
 
-webAdmin/.DS_Store
-webAdmin/node_modules
-webAdmin/dist
+frontendAdmin/.DS_Store
+frontendAdmin/node_modules
+frontendAdmin/dist
 
 # local env files
-webAdmin/.env.local
-webAdmin/.env.*.local
+frontendAdmin/.env.local
+frontendAdmin/.env.*.local
 
 # Log files
-webAdmin/npm-debug.log*
-webAdmin/yarn-debug.log*
-webAdmin/yarn-error.log*
+frontendAdmin/npm-debug.log*
+frontendAdmin/yarn-debug.log*
+frontendAdmin/yarn-error.log*
 
 # Editor directories and files
-webAdmin/.idea
-webAdmin/.vscode
-webAdmin/*.suo
-webAdmin/*.ntvs*
-webAdmin/*.njsproj
-webAdmin/*.sln
-webAdmin/*.sw?
+frontendAdmin/.idea
+frontendAdmin/.vscode
+frontendAdmin/*.suo
+frontendAdmin/*.ntvs*
+frontendAdmin/*.njsproj
+frontendAdmin/*.sln
+frontendAdmin/*.sw?
 
+# vscode
 .vscode/
 

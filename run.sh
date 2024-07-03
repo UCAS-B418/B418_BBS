@@ -1,5 +1,5 @@
 gunicorn -c gunicorn.conf.py prod_run:app
-# cd web
+# cd frontend
 # yarn run serve
-# cd ../webAdmin
+# cd ../frontendAdmin
 # yarn run serve
