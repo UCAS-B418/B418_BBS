@@ -146,6 +146,13 @@ let router = new Router({
             auth: false
           },
           component: _import('Buslist')
+        },{
+          path: 'food',
+          name: 'food',
+          meta: {
+            auth: false
+          },
+          component: _import('Food')
         }
       ]
     },
