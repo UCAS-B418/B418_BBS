@@ -76,6 +76,10 @@
           <a class="a-link" href="/#/buslist">
           <Icon type="ios-ice-cream" /><span style="margin-left: 5px;">班车列表</span></a>
         </div>
+        <div class="cell">
+          <a class="a-link" href="/#/food">
+          <Icon type="ios-ice-cream" /><span style="margin-left: 5px;">今日美食</span></a>
+        </div>
       </div>
       <br>
       <div v-if="indexData.fav_tabs">
@@ -186,6 +190,10 @@ export default {
 }
 </script>
 <style lang="scss">
+.inner{
+  background-color: #ccc;
+  color:chocolate;
+}
 .tab {
   .tab-item {
     display: inline-block;
@@ -194,6 +202,7 @@ export default {
     padding: 5px 8px;
     margin-right: 5px;
     color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .tab-item:hover {
     background-color: #f5f5f5;

@@ -2,7 +2,9 @@
   <div class="main-layout">
     <div class="main-header">
       <div class="content">
-        <div class="logo"><a href="/#/">国科在线网</a></div>
+        <img src="../assets/logo.png" class="logo-img" >
+        <div class="logo">
+        <a href="/#/">国科在线网</a></div>
         <!-- <div class="search">
           <Input v-model="searchKey"
                  placeholder="search ..."
@@ -98,6 +100,7 @@ a:hover {
   line-height: 120%;
   text-align: left;
   border-bottom: 1px solid #e2e2e2;
+  color:darkred;
 }
 .a-link {
   color: #778087;
@@ -143,7 +146,7 @@ a:hover {
   }
 }
 .main-layout {
-  background-color: white;
+  background-color: #c5c8ce;
   .main-header {
     position: fixed;
     top: 0;
@@ -165,14 +168,22 @@ a:hover {
       display: block;
       .logo {
         a {
-          color: black;
+          color: #87CEEB;
         }
         width: 200px;
         font-size: 200%;
         font-weight: bold;
         color: black;
         float: left;
+        display:inline-block;
+        // align-items: center;
       }
+      .logo-img{
+        margin-top: 5px;
+        display: inline-block;
+        float: left;
+      }
+
       .search {
         float: left;
         margin-left: 10px;
@@ -198,13 +209,20 @@ a:hover {
     padding-top: 44px;
     padding-bottom: 20px;
     text-align: center;
-    background-color: #e2e2e2;
+    background-image: url(../assets/ucacnj.jpg);
+    // background-color: #e2e2e2;
+    background-size: 100% 100%; /* 图片填满整个组件 */
+    background-position: center; /* 图片居中 */
+    background-repeat: no-repeat; /* 不重复图片 */
     box-shadow: inset 0px 12px 8px -12px #848383;
     .content {
       min-width: 600px;
       max-width: 1100px;
       min-height: 800px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1; /* 确保内容在背景前面 */
+      color: white; /* 确保文本在背景上可读 */
       .left-content {
         flex-grow: 1;
       }
@@ -215,6 +233,8 @@ a:hover {
       }
     }
   }
+  
+
   .main-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.22);
     padding-top: 10px;
