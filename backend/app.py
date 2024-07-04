@@ -1,7 +1,7 @@
 import os
 from flask import Flask
 from backend.config import DevConfig
-from backend.core.extensions import db, migrate, session, celery, redis_store
+from backend.core.extensions import db, session, redis_store
 
 
 def create_app():
@@ -12,15 +12,12 @@ def create_app():
     register_extensions(app)
     register_router(app)
     register_logging(app)
-
     return app
 
 def register_extensions(app):
     db.init_app(app)
-    migrate.init_app(app, db)
     session.init_app(app)
     redis_store.init_app(app)
-    celery.config_from_object(app.config)
     return app
  
 

@@ -20,23 +20,35 @@ sudo apt install mysql-server
 # node v14.16.0
 # yarn v1.22.22
 # npm v6.14.11
-sudo apt install nodejs
+
+# 安装 nvm node版本管理工具
+cd nvm
+bash install.sh
+source ~/.bashrc
+# 安装 nodejs
+nvm install 14.16.0
+# 查看 nodejs及nmp版本
+# node -v
+# npm -v
+
+# 安装 yarn
 npm install -g yarn
 
 ## ------------------------------------------- ##
 
 # backend
-conda create -n sb python=3.6
-conda activate sb
+conda create -n b418_bbs python=3.6
+conda activate b418_bbs
 pip install -r requirements.txt
 ./run.sh
 
-# frontend(user)
+# 启动 frontend(user)
 cd web
 yarn install
 yarn run serve
+# 地址 
 
-# frontend(admin)
+# 启动 frontend(admin)
 cd webAdmin
 yarn install
 yarn run serve

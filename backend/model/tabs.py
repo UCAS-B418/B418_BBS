@@ -48,5 +48,3 @@ class SubTabFav(BaseModal):
     available = db.Column(db.Boolean, default=1)
     time_create = db.Column(db.DateTime, default=datetime.now)
     time_modify = db.Column(db.DateTime, default=datetime.now, onupdate=datetime.now)
-
-    
