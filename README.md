@@ -36,7 +36,7 @@ npm install -g yarn
 
 ## ------------------------------------------- ##
 
-# backend
+# backend 后端
 conda create -n b418_bbs python=3.6
 conda activate b418_bbs
 pip install -r requirements.txt

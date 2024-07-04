@@ -46,4 +46,4 @@ class BaseConfig(object):
 class DevConfig(BaseConfig):
     BROKER_URL = 'redis://127.0.0.1:6379/1'
     PRIVATE_KEY_PATH = '/root/.ssh/id_rsa'
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://chh:qq123123@localhost:3306/gkddb?charset=utf8mb4'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:root@localhost:3306/b418_bbs?charset=utf8mb4'
