@@ -1,5 +1,0 @@
-rules: {
-    'no-trailing-spaces': 'off', // 关闭检查行尾空格
-    'space-before-function-paren': 'off', // 关闭函数括号前的空格检查
-    // 其他规则
-}

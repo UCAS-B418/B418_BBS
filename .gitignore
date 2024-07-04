@@ -155,3 +155,4 @@ frontendAdmin/*.sw?
 # vscode
 .vscode/
 
+node_modules
