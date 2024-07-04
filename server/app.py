@@ -1,7 +1,7 @@
 import os
 from flask import Flask
-from backend.config import DevConfig
-from backend.core.extensions import db, session, redis_store
+from server.config import DevConfig
+from server.core.extensions import db, session, redis_store
 
 
 def create_app():
@@ -22,8 +22,8 @@ def register_extensions(app):
  
 
 def register_router(app):
-    from backend.router.v1 import routers as v1_routers
-    from backend.router.admin import routers as admin_routers
+    from server.router.v1 import routers as v1_routers
+    from server.router.admin import routers as admin_routers
     for _r in v1_routers:
         app.add_url_rule(rule='/api/v1' + _r[0], view_func=_r[1].as_view(name=_r[2]))
     for _r in admin_routers:
