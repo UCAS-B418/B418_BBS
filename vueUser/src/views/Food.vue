@@ -1,15 +1,14 @@
 <template>
-  <div class="food">
-    <h1>今日美食</h1>
-    <div class="price-buttons">
-      <button @click="filterDishes('10元区')">十元区</button>
-      <button @click="filterDishes('6元区')">六元区</button>
-      <button @click="filterDishes('4元区')">四元区</button>
+  <div class="food-container">
+    <div class="category-buttons">
+      <button @click="setCategory('ten')">十元区</button>
+      <button @click="setCategory('six')">六元区</button>
+      <button @click="setCategory('four')">四元区</button>
     </div>
-    <div class="dishes">
-      <div v-for="dish in filteredDishes" :key="dish.id" class="dish">
-        <img :src="dish.image" :alt="dish.name" class="dish-image">
-        <p class="dish-name">{{ dish.name }}</p>
+    <div class="food-items">
+      <div v-for="food in filteredFoods" :key="food.name" class="food-item">
+        <img :src="food.image" :alt="food.name" />
+        <p>{{ food.name }}</p>
       </div>
     </div>
   </div>
@@ -34,56 +33,47 @@ export default {
     };
   },
   computed: {
-    filteredDishes() {
-      return this.dishes.filter(dish => dish.category === this.selectedCategory);
-    }
+    filteredFoods() {
+      return this.foods.filter(food => food.category === this.category);
+    },
   },
   methods: {
-    filterDishes(category) {
-      this.selectedCategory = category;
-    }
-  }
+    setCategory(category) {
+      this.category = category;
+    },
+  },
 };
 </script>
 
 <style scoped>
-.food {
-  padding: 20px;
+.food-container {
   text-align: center;
 }
 
-.price-buttons {
+.category-buttons {
   margin-bottom: 20px;
 }
 
-.price-buttons button {
+.category-buttons button {
   margin: 0 10px;
   padding: 10px 20px;
-  font-size: 16px;
   cursor: pointer;
 }
 
-.dishes {
+.food-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.dish {
-  width: 30%;
+.food-item {
+  width: 25%;
   margin: 10px;
   text-align: center;
 }
 
-.dish img {
+.food-item img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-}
-
-.dish-name {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
 }
 </style>
