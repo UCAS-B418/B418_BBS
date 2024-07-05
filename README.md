@@ -43,13 +43,13 @@ pip install -r requirements.txt
 ./run.sh
 
 # 启动 frontend(user)
-cd vue
+cd vueUser
 yarn install
 yarn run serve
-# 地址 
+# 地址
 
 # 启动 frontend(admin)
-cd vueAdmin
+cd vueAdmina
 yarn install
 yarn run serve
 ```
