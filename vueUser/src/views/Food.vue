@@ -21,14 +21,14 @@ export default {
       selectedCategory: '10元区',
       dishes: [
         { id: 1, name: '红烧肉', category: '10元区', image: '../../public/Food/OSK.jpg' },
-        { id: 2, name: '宫保鸡丁', category: '10元区', image: '../assets/Food/OIP.jpg' },
-        { id: 3, name: '鱼香茄子', category: '10元区', image: '../assets/Food/OIP1.jpg' },
-        { id: 4, name: '炒青菜', category: '6元区', image: '../assets/Food/th.jpg' },
-        { id: 5, name: '西红柿炒鸡蛋', category: '6元区', image: '../assets/Food/OSK1.jpg' },
-        { id: 6, name: '麻婆豆腐', category: '6元区', image: '../assets/Food/OSK2.jpg' },
-        { id: 7, name: '蒸蛋', category: '4元区', image: '../assets/Food/ega.jpg' },
-        { id: 8, name: '白菜豆腐汤', category: '4元区', image: '../assets/Food/OSK3.jpg' },
-        { id: 9, name: '清炒豆芽', category: '4元区', image: '../assets/Food/OSK4.jpg' }
+        { id: 2, name: '宫保鸡丁', category: '10元区', image: '../../public/Food/OIP.jpg' },
+        { id: 3, name: '鱼香茄子', category: '10元区', image: '../../public/Food/OIP1.jpg' },
+        { id: 4, name: '炒青菜', category: '6元区', image: '../../public/Food/th.jpg' },
+        { id: 5, name: '西红柿炒鸡蛋', category: '6元区', image: '../../public/Food/OSK1.jpg' },
+        { id: 6, name: '麻婆豆腐', category: '6元区', image: '../../public/Food/OSK2.jpg' },
+        { id: 7, name: '蒸蛋', category: '4元区', image: '../../public/Food/ega.jpg' },
+        { id: 8, name: '白菜豆腐汤', category: '4元区', image: '../../public/Food/OSK3.jpg' },
+        { id: 9, name: '清炒豆芽', category: '4元区', image: '../../public/Food/OSK4.jpg' }
       ]
     };
   },
