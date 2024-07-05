@@ -18,18 +18,27 @@
 export default {
   data() {
     return {
-      selectedCategory: '10元区',
-      dishes: [
-        { id: 1, name: '红烧肉', category: '10元区', image: '../../public/images/Food/OSK.jpg' },
-        { id: 2, name: '宫保鸡丁', category: '10元区', image: '../../public/images/Food/OIP.jpg' },
-        { id: 3, name: '鱼香茄子', category: '10元区', image: '../../public/images/Food/OIP1.jpg' },
-        { id: 4, name: '炒青菜', category: '6元区', image: '../../public/images/Food/th.jpg' },
-        { id: 5, name: '西红柿炒鸡蛋', category: '6元区', image: '../../public/images/Food/OSK1.jpg' },
-        { id: 6, name: '麻婆豆腐', category: '6元区', image: '../../public/images/Food/OSK2.jpg' },
-        { id: 7, name: '蒸蛋', category: '4元区', image: '../../public/images/Food/ega.jpg' },
-        { id: 8, name: '白菜豆腐汤', category: '4元区', image: '../../public/images/Food/OSK3.jpg' },
-        { id: 9, name: '清炒豆芽', category: '4元区', image: '../../public/images/Food/OSK4.jpg' }
-      ]
+      category: 'ten',
+      foods: [
+        // { name: '红烧肉', category: 'ten', image: '../../images/hongshaorou.png' },
+        // { name: '葱爆羊肉', category: 'ten', image: '../../images/cbyr.png' },
+        // { name: '冬瓜排骨汤', category: 'ten', image: '../../images/hongshaorou.png' },
+        // { name: '宫保鸡丁', category: 'six', image: '../../images/OIP.jpg' },
+        // { name: '食物E', category: 'six', image: '/images/imageE.jpg' },
+        // { name: '食物F', category: 'six', image: '/images/imageF.jpg' },
+        // { name: '食物G', category: 'four', image: '/images/imageG.jpg' },
+        // { name: '食物H', category: 'four', image: '/images/imageH.jpg' },
+        // { name: '鸡蛋羹', category: 'four', image: '/images/imageI.jpg' },
+        { name: '红烧肉', category: 'ten', image: '../../images/Food/OSK.jpg' },
+        { name: '宫保鸡丁', category: 'ten', image: '../../images/Food/OIP.jpg' },
+        { name: '鱼香茄子', category: 'ten', image: '../../images/Food/OIP1.jpg' },
+        { name: '炒青菜', category: 'six', image: '../../images/Food/th.jpg' },
+        { name: '西红柿炒鸡蛋', category: 'six', image: '../../images/Food/OSK1.jpg' },
+        { name: '麻婆豆腐', category: 'six', image: '../../images/Food/OSK2.jpg' },
+        { name: '蒸蛋', category: 'four', image: '../../images/Food/ega.jpg' },
+        { name: '白菜豆腐汤', category: 'four', image: '../../images/Food/OSK3.jpg' },
+        { name: '清炒豆芽', category: 'four', image: '../../images/Food/OSK4.jpg' }
+      ],
     };
   },
   computed: {
@@ -73,7 +82,9 @@ export default {
 }
 
 .food-item img {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
+  width: 200px;
+  height: 200px;
 }
 </style>
